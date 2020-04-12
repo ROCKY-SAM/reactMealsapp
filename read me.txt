@@ -12,3 +12,5 @@ props.navigation.goBack();
 props.navigation.pop(); only in stack navigator
       props.navigation.popToTop(); back to main 
       props.naviation.replace(); new screen
+
+npm install --save react-native-screens
