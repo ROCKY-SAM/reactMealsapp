@@ -10,6 +10,15 @@ import Colors from '../constants/Colors';
 
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 
+const defaultStackNavOptions={
+  headerStyle: {
+    backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : ''
+  },
+  headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor,
+  headerTitle:'A Screen'
+
+}
+
 
 const MealsNavigator = createStackNavigator({
   Categories: CategoriesScreen,
@@ -19,13 +28,14 @@ const MealsNavigator = createStackNavigator({
   MealDetail: MealDetailScreen
 }, {
   mode: 'Modal',
-  defaultNavigationOptions: {
-    headerStyle: {
-      backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : ''
-    },
-    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor
-  }
+  defaultNavigationOptions: defaultStackNavOptions
 });
+
+const FavNavigator = createStackNavigator({
+  Favorites:FavoritesScreen,
+  MealDetail:MealDetailScreen
+},{  defaultNavigationOptions: defaultStackNavOptions});
+
 
 const tabScreenConfig = {
   Meals: {
@@ -38,7 +48,8 @@ const tabScreenConfig = {
     }
   },
   Favorites: {
-    screen: FavoritesScreen, navigationOptions: {
+    screen: FavNavigator, 
+    navigationOptions: {
       tabBarIcon: (tabInfo) => {
         return <Ionicons name='ios-star' size={25} color={tabInfo.tintColor} />;
       },  tabBarColor:Colors.accentColor
