@@ -16,3 +16,32 @@ props.navigation.pop(); only in stack navigator
 npm install --save react-native-screens
 npm install --save react-navigation-header-buttons
 npm install --save @expo/vector-icons
+
+
+navigationOptions inside of a Navigator
+
+When defining a navigator, you can also add navigationOptions to it:
+
+    const SomeNavigator = createStackNavigator({
+        ScreenIdentifier: SomeScreen
+    }, {
+        navigationOptions: {
+            // You can set options here!
+            // Please note: This is NOT defaultNavigationOptions!
+        }
+    });
+
+Don't mistake this for the defaultNavigationOptions which you could also set there (i.e. in the second argument you pass to createWhateverNavigator()).
+
+The navigationOptions you set on the navigator will NOT be used in its screens! That's the difference to defaultNavigationOptions - those option WILL be merged with the screens.
+
+So what's the use of navigationOptions in that place then?
+
+The options become important once you use the navigator itself as a screen in some other navigator - for example if you use some stack navigator (created via createStackNavigator()) in a tab navigator (e.g. created via createBottomTabNavigator()).
+
+In such a case, the navigationOptions configure the "nested navigator" (which is used as a screen) for that "parent navigator". For example, you can use navigationOptions on the nested navigator that's used in a tab navigator to configure the tab icons.
+
+
+
+npm install --save react-navigation-material-bottom-tabs
+npm install --save react-native-paper
