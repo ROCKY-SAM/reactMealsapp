@@ -14,3 +14,5 @@ props.navigation.pop(); only in stack navigator
       props.naviation.replace(); new screen
 
 npm install --save react-native-screens
+npm install --save react-navigation-header-buttons
+npm install --save @expo/vector-icons
