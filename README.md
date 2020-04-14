@@ -130,3 +130,8 @@ Hence the function is NOT re-built on every render cycle anymore => You break ou
 
 
 npm install --save redux react-redux
+
+
+  // useEffect(()=>{
+  //   props.navigation.setParams({mealTitle:selectedMeal.title});
+  // },[selectedMeal]);
