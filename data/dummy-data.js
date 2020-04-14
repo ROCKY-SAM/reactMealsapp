@@ -64,7 +64,7 @@ export const MEALS = [
     [
       'Butter one side of the white bread',
       'Layer ham, the pineapple and cheese on the white bread',
-      'Bake the toast for round about 10 minutes in the oven at 200Â°C'
+      'Bake the toast for round about 10 minutes in the oven at 200°C'
     ],
     false,
     false,
@@ -120,11 +120,11 @@ export const MEALS = [
       'Lemon Slices'
     ],
     [
-      'Tenderize the veal to about 2â€“4mm, and salt on both sides.',
+      'Tenderize the veal to about 2–4mm, and salt on both sides.',
       'On a flat plate, stir the eggs briefly with a fork.',
       'Lightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.',
       'Heat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.',
-      'Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes â€˜fluffyâ€™.',
+      'Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.',
       'Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.',
       'Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.'
     ],
@@ -247,7 +247,7 @@ export const MEALS = [
     ],
     [
       'Slice and fry the chicken breast',
-      'Process onion, garlic and ginger into paste and sautÃ© everything',
+      'Process onion, garlic and ginger into paste and sauté everything',
       'Add spices and stir fry',
       'Add chicken breast + 250ml of water and cook everything for 10 minutes',
       'Add coconut milk',
@@ -282,7 +282,7 @@ export const MEALS = [
       '1 Tablespoon white Sugar'
     ],
     [
-      'Preheat oven to 190Â°C. Line a rimmed baking sheet with parchment paper.',
+      'Preheat oven to 190°C. Line a rimmed baking sheet with parchment paper.',
       'Brush bottom and sides of 2 ramekins lightly with 1 teaspoon melted butter; cover bottom and sides right up to the rim.',
       'Add 1 tablespoon white sugar to ramekins. Rotate ramekins until sugar coats all surfaces.',
       'Place chocolate pieces in a metal mixing bowl.',
