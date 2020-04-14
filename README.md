@@ -126,3 +126,7 @@ useCallback() helps you prevent this.
 By wrapping it around a function declaration and defining the dependencies of the function, it ensures that the function is only re-created if its dependencies changed.
 
 Hence the function is NOT re-built on every render cycle anymore => You break out of the infinite loop!
+
+
+
+npm install --save redux react-redux
